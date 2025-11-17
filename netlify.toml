@@ -1,0 +1,21 @@
+# Netlify configuration file
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+# Enable Netlify Forms
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Form settings
+[build.environment]
+  NEXT_PRIVATE_TARGET = "server"
+
+# Redirect rules
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
+
