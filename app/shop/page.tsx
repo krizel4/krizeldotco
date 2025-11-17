@@ -1,5 +1,6 @@
 import { ProductCard } from '@/components/ProductCard'
 import { products } from '@/data/products'
+import { MainLayout } from '@/components/MainLayout'
 
 export const metadata = {
   title: 'Fitness Shop - Supplements & Gear - krizel',
@@ -10,7 +11,7 @@ export default function ShopPage() {
   const categories = ['All Products', 'Supplements', 'Gear', 'Apparel']
 
   return (
-    <>
+    <MainLayout>
       {/* Header */}
       <section className="bg-gradient-to-br from-primary to-accent-yellow text-white py-20">
         <div className="container-custom text-center">
@@ -96,7 +97,7 @@ export default function ShopPage() {
           </div>
         </div>
       </section>
-    </>
+    </MainLayout>
   )
 }
 

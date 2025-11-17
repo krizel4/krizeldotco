@@ -1,7 +1,8 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Script from 'next/script'
+import { MainLayout } from '@/components/MainLayout'
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -48,7 +49,7 @@ export default function ContactPage() {
   }
 
   return (
-    <>
+    <MainLayout>
       {/* Load Google reCAPTCHA */}
       <Script
         src="https://www.google.com/recaptcha/api.js"
@@ -249,7 +250,7 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-    </>
+    </MainLayout>
   )
 }
 

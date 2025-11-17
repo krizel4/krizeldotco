@@ -15,17 +15,17 @@ A modern JAMstack blog specializing in fitness, workouts, and nutrition, built w
 
 ## 🎨 Brand Colors
 
-- **Primary:** `#FB6E52` (Coral)
-- **Secondary:** `#568265` (Sage Green)
-- **Accent Green:** `#92C3A4`
-- **Accent Yellow:** `#FFCE55`
+- **Primary:** `#92C3A4` (Light Green)
+- **Secondary:** `#FFCE55` (Golden Yellow)
+- **Accent Green:** `#568265` (Sage Green)
+- **Accent Yellow:** `#FB6E52` (Coral)
 - **Accent Cream:** `#F2F6EB`
 - **Accent Lime:** `#DBF58E`
 
 ## 📝 Typography
 
 - **Body Font:** Neue Haas Grotesk
-- **Display Font:** Scotch Display
+- **Display Font:** Fabulosa
 
 ## 🚀 Getting Started
 

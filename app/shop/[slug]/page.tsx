@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { products } from '@/data/products'
 import { ProductCarousel } from '@/components/ProductCarousel'
+import { MainLayout } from '@/components/MainLayout'
 import { notFound } from 'next/navigation'
 import { useState } from 'react'
 
@@ -21,7 +22,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
     .slice(0, 3)
 
   return (
-    <>
+    <MainLayout>
       {/* Product Details */}
       <section className="section-padding bg-white">
         <div className="container-custom">
@@ -200,10 +201,10 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
               You May Also Like
             </h2>
             <ProductCarousel products={relatedProducts} />
-          </div>
-        </section>
+        </div>
+      </section>
       )}
-    </>
+    </MainLayout>
   )
 }
 

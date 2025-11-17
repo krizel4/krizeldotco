@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { MainLayout } from '@/components/MainLayout'
 
 export const metadata = {
   title: 'Affiliate Program - Partner With Us - Krizel',
@@ -52,7 +53,7 @@ const affiliatePrograms = [
 
 export default function AffiliatesPage() {
   return (
-    <>
+    <MainLayout>
       {/* Hero */}
       <section className="bg-gradient-to-br from-secondary via-accent-green to-accent-lime text-white py-20">
         <div className="container-custom text-center">
@@ -294,7 +295,7 @@ export default function AffiliatesPage() {
           </div>
         </div>
       </section>
-    </>
+    </MainLayout>
   )
 }
 

@@ -1,5 +1,6 @@
 import { BlogCard } from '@/components/BlogCard'
 import { blogPosts } from '@/data/blog-posts'
+import { MainLayout } from '@/components/MainLayout'
 
 export const metadata = {
   title: 'Fitness Blog - Workout Tips & Meal Plans - krizel',
@@ -10,7 +11,7 @@ export default function BlogPage() {
   const categories = ['All', 'Workouts', 'Nutrition', 'Wellness']
 
   return (
-    <>
+    <MainLayout>
       {/* Header */}
       <section className="bg-gradient-to-br from-secondary to-accent-green text-white py-20">
         <div className="container-custom text-center">
@@ -77,7 +78,7 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
-    </>
+    </MainLayout>
   )
 }
 

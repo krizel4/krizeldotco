@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { MainLayout } from '@/components/MainLayout'
 
 export const metadata = {
   title: 'Fitness Resources - Krizel',
@@ -40,7 +41,7 @@ const resourceCategories = [
 
 export default function ResourcesPage() {
   return (
-    <>
+    <MainLayout>
       {/* Hero */}
       <section className="bg-gradient-to-br from-primary to-secondary text-white py-20">
         <div className="container-custom text-center">
@@ -151,7 +152,7 @@ export default function ResourcesPage() {
           </div>
         </div>
       </section>
-    </>
+    </MainLayout>
   )
 }
 

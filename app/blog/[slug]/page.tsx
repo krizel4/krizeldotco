@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { blogPosts } from '@/data/blog-posts'
 import { RecommendedBlogs } from '@/components/RecommendedBlogs'
+import { MainLayout } from '@/components/MainLayout'
 import { notFound } from 'next/navigation'
 
 export async function generateStaticParams() {
@@ -33,7 +34,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <>
+    <MainLayout>
       {/* Article Header */}
       <article className="bg-white">
         <div className="container-custom py-12">
@@ -189,7 +190,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </section>
-    </>
+    </MainLayout>
   )
 }
 

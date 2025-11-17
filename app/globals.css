@@ -4,8 +4,9 @@
 
 /* Font Variables */
 :root {
-  --font-neue-haas: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-  --font-scotch: Georgia, 'Times New Roman', serif;
+  /* Update these font names to match your Adobe Fonts after adding your kit ID */
+  --font-neue-haas: 'neue-haas-grotesk-display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-scotch: 'fabulosa', Georgia, 'Times New Roman', serif;
 }
 
 /* Base Styles */
@@ -73,7 +74,7 @@ html {
 
 /* Selection Color */
 ::selection {
-  background-color: #FB6E52;
+  background-color: #92C3A4;
   color: white;
 }
 
