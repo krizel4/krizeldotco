@@ -61,7 +61,7 @@ export default function ResourcesPage() {
               </div>
               <div>
                 <h3 className="font-display text-lg text-red-900">In Crisis?</h3>
-                <p className="text-red-800">If you're experiencing a mental health emergency, help is available now.</p>
+                <p className="text-red-800">If you&apos;re experiencing a mental health emergency, help is available now.</p>
               </div>
             </div>
             <a href="tel:988" className="btn bg-red-500 text-white hover:bg-red-600 whitespace-nowrap">

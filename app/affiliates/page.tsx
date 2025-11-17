@@ -73,7 +73,7 @@ export default function AffiliatesPage() {
           <div className="text-center mb-16">
             <h2 className="text-secondary mb-4">Why Partner With Krizel?</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              We're more than just an affiliate program—we're a community committed to fitness and wellness
+              We&apos;re more than just an affiliate program—we&apos;re a community committed to fitness and wellness
             </p>
           </div>
 

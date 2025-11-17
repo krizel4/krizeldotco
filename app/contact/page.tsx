@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import Script from 'next/script'
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -48,12 +49,18 @@ export default function ContactPage() {
 
   return (
     <>
+      {/* Load Google reCAPTCHA */}
+      <Script
+        src="https://www.google.com/recaptcha/api.js"
+        strategy="lazyOnload"
+      />
+
       {/* Header */}
       <section className="bg-gradient-to-br from-primary to-secondary text-white py-20">
         <div className="container-custom text-center">
           <h1 className="text-white mb-6">Get in Touch</h1>
           <p className="text-xl text-white opacity-90 max-w-3xl mx-auto">
-            Have questions about fitness, nutrition, or our products? We'd love to hear from you!
+            Have questions about fitness, nutrition, or our products? We&apos;d love to hear from you!
           </p>
         </div>
       </section>
@@ -66,7 +73,7 @@ export default function ContactPage() {
               <div className="text-center mb-8">
                 <h2 className="text-secondary mb-4">Send Us a Message</h2>
                 <p className="text-gray-600">
-                  Fill out the form below and we'll get back to you as soon as possible.
+                  Fill out the form below and we&apos;ll get back to you as soon as possible.
                 </p>
               </div>
 
@@ -74,6 +81,7 @@ export default function ContactPage() {
                 name="contact"
                 method="POST"
                 data-netlify="true"
+                data-netlify-recaptcha="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}
               >
@@ -133,6 +141,11 @@ export default function ContactPage() {
                     />
                   </div>
 
+                  {/* reCAPTCHA */}
+                  <div className="flex justify-center">
+                    <div data-netlify-recaptcha="true"></div>
+                  </div>
+
                   {/* Submit Button */}
                   <button
                     type="submit"
@@ -146,7 +159,7 @@ export default function ContactPage() {
                   {submitStatus === 'success' && (
                     <div className="bg-accent-green bg-opacity-20 border border-accent-green rounded-lg p-4 text-center">
                       <p className="text-secondary font-medium">
-                        ✓ Thanks for reaching out! We'll get back to you soon.
+                        ✓ Thanks for reaching out! We&apos;ll get back to you soon.
                       </p>
                     </div>
                   )}
@@ -216,11 +229,11 @@ export default function ContactPage() {
                 },
                 {
                   q: 'How long does shipping take?',
-                  a: 'Most orders ship within 2-3 business days. You\'ll receive tracking information via email once your order ships.',
+                  a: 'Most orders ship within 2-3 business days. You&apos;ll receive tracking information via email once your order ships.',
                 },
                 {
                   q: 'Can I return products?',
-                  a: 'Absolutely! We offer a 30-day money-back guarantee on all products. Contact us if you\'re not satisfied with your purchase.',
+                  a: 'Absolutely! We offer a 30-day money-back guarantee on all products. Contact us if you&apos;re not satisfied with your purchase.',
                 },
                 {
                   q: 'Do you provide nutrition coaching?',

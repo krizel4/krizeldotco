@@ -102,7 +102,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 Understanding the Impact
               </h2>
               <p>
-                Mental health is a crucial aspect of our overall wellbeing, yet it's often overlooked or stigmatized. 
+                Mental health is a crucial aspect of our overall wellbeing, yet it&apos;s often overlooked or stigmatized. 
                 By understanding the factors that affect our mental health, we can take proactive steps to maintain 
                 and improve our psychological wellness.
               </p>
@@ -111,9 +111,9 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 Practical Strategies
               </h3>
               <p>
-                Implementing effective strategies for mental wellness doesn't have to be complicated. Start with 
-                small, manageable changes that you can sustain over time. Remember, progress isn't linear, and 
-                it's okay to have setbacks along the way.
+                Implementing effective strategies for mental wellness doesn&apos;t have to be complicated. Start with 
+                small, manageable changes that you can sustain over time. Remember, progress isn&apos;t linear, and 
+                it&apos;s okay to have setbacks along the way.
               </p>
 
               <div className="bg-accent-cream border-l-4 border-primary p-6 rounded-r-lg my-8">
@@ -128,7 +128,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 Moving Forward
               </h3>
               <p>
-                Remember that seeking help is a sign of strength, not weakness. Whether you're working with a 
+                Remember that seeking help is a sign of strength, not weakness. Whether you&apos;re working with a 
                 therapist, joining a support group, or using self-help resources, taking steps to support your 
                 mental health is always worthwhile.
               </p>

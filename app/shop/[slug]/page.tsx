@@ -179,7 +179,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
               <div className="prose prose-lg text-gray-700">
                 <p>
                   This carefully selected product is designed to support your mental wellness journey. 
-                  Whether you're looking to establish a mindfulness practice, improve your sleep, or 
+                  Whether you&apos;re looking to establish a mindfulness practice, improve your sleep, or 
                   enhance your self-care routine, this item has been chosen for its quality and effectiveness.
                 </p>
                 <p>
