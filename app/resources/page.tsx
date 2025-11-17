@@ -86,7 +86,7 @@ export default function ResourcesPage() {
                     {category.resources.map((resource, idx) => (
                       <div key={idx} className="border border-gray-200 rounded-lg p-6 hover:border-primary transition-colors">
                         <h3 className="font-display text-xl text-secondary mb-2">{resource.name}</h3>
-                        {resource.contact && (
+                        {'contact' in resource && (
                           <p className="text-2xl font-bold text-primary mb-2">{resource.contact}</p>
                         )}
                         <p className="text-gray-600">{resource.description}</p>

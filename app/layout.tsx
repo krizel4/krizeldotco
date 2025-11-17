@@ -22,7 +22,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="robots" content="noindex, nofollow" />
-        <link rel="stylesheet" href="https://use.typekit.net/foobar.css" />
       </head>
       <body className="font-sans bg-accent-cream text-gray-900">
         <Navigation />
